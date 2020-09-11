@@ -1,0 +1,21 @@
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeContainer"
+    android:padding="@dimen/padding_from_border"
+    android:background="@color/bggGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/lv_detail_visit_plan_payment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/padding_from_border"
+        android:divider="@color/white"
+        android:dividerHeight="0dp">
+    </ListView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

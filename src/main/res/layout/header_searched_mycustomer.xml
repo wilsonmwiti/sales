@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="@color/bgPerformance"
+    android:src="@drawable/bg_white_with_radius"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_searched_mycustomer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf = "@+id/rl_action_mycustomer"
+        android:foregroundGravity="fill_horizontal"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/tv_header_searched_mycustomer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_primary_size"
+            android:textColor="@color/gray"
+            android:text="search result"
+            android:padding="10dp"
+            android:foregroundGravity="fill_horizontal"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

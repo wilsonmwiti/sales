@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/bggGray"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:padding="@dimen/padding_from_header"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/padding_from_border"
+        android:layout_marginRight="@dimen/padding_from_border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/no"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="-"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_invoice_no"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text=""
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_invoice"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Cash"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_cash"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Giro"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_giro"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Cheque"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_cheque"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Transfer"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_transfer"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Kontra Bon"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_kontrabon"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

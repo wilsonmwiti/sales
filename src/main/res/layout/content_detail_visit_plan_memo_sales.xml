@@ -1,0 +1,338 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="@dimen/margin_from_left_right"
+    android:background="@color/bggGray">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scroll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_category_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:visibility="visible"
+                >
+
+                <TextView
+                    android:id="@+id/tv_category_visit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tujuan visit"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    />
+
+                <Spinner
+                    android:id="@+id/spn_category_visit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/ll_category_visit"
+                android:id="@+id/ll_is_nc_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_is_nc_option"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:foregroundGravity="bottom"
+                        android:text="Is New Customer ?"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="@dimen/padding_from_border"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_checkbox">
+                        <CheckBox
+                            android:id="@+id/cb_is_nc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/custom_checkbox"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/ll_is_nc_option"
+                android:id="@+id/ll_content_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:layout_marginRight="@dimen/margin_from_left_right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_memo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Catatan"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/et_memo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:overScrollMode="always"
+                        android:scrollbarStyle="insideInset"
+                        android:scrollbars="vertical"
+                        android:lines="2"
+                        android:scrollHorizontally="true" />
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/et_memo"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:inputType="text"-->
+                        <!--android:textSize="13sp"-->
+                        <!--android:background="@drawable/bg_input"-->
+                        <!--android:paddingTop="5dp"-->
+                        <!--android:layout_marginTop="@dimen/margin_from_top_text"-->
+                        <!--android:layout_marginBottom="@dimen/margin_from_top_text"-->
+                        <!--android:paddingBottom="5dp" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content_photo_memo"
+                android:layout_below="@id/ll_content_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_take_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_camera_alt_black_24dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Ambil Foto"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/ll_scroll_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/bg_white_with_radius">
+
+                    <LinearLayout
+                        android:id="@+id/ll_image_customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content_competitor"
+                android:layout_below="@id/ll_content_photo_memo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white_with_radius"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_competitor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produk Kompetitor"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <RelativeLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginRight="28dp"
+                        android:layout_marginTop="@dimen/padding_from_border"
+                        android:layout_marginBottom="10dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_checkbox">
+                        <CheckBox
+                            android:id="@+id/cb_select_competitor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text=""
+                            android:button="@drawable/custom_checkbox"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_competitor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_take_photo_competitor"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_camera_alt_black_24dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ambil Foto"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                    <androidx.core.widget.NestedScrollView
+                        android:id="@+id/ll_scroll_competitor"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/bg_white_with_radius">
+
+                        <LinearLayout
+                            android:id="@+id/ll_image_competitor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_white_with_radius"
+                            android:orientation="vertical">
+                        </LinearLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_footer_memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_submit_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="@drawable/bg_blue_with_radius"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/btn_update_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/bg_blue_with_radius"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="Update"
+            android:layout_gravity="bottom|center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

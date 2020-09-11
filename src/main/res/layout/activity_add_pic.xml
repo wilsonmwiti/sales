@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/bggGray"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AddPICActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_from_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="KONTAK BARU"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:textColor="@color/textPrimaryColor"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:text="Nama"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_nama"
+            android:hint="Nama"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/textPrimaryColor"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:text="No. Telp"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/et_no_telp"
+            android:hint="No. Telp"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/textPrimaryColor"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:text="Jabatan"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_jabatan"
+            android:hint="Jabatan"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/textPrimaryColor"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:text="Email"
+            android:textSize="@dimen/text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/et_email"
+            android:hint="Email"
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:id="@+id/btn_simpan"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:text="SIMPAN"
+        android:background="@drawable/bg_button_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    tools:context=".AppBundle.Plan.DetailPlanActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/w_toolber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        android:id="@+id/ll_header_detail_plan"
+        layout="@layout/content_list_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_header_detail_plan"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="@dimen/padding_from_header"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:layout_marginBottom="@dimen/margin_from_top_text"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:background="@drawable/bg_white_with_radius"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="ID Plan"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_detail_id_plan"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="xxx"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.7" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Asset"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_detail_asset"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="xxx"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.7" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Tanggal dibuat"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_detail_created_date"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="xxx"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.7" />-->
+        <!--</LinearLayout>-->
+
+        <!--<View-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@color/colorAccent"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Total Kunjungan"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_detail_total_visit"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="xxx"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.7" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="Total Packing Slip"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.3" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_detail_total_packingslip"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:textSize="@dimen/text_normal"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:text="xxx"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="0.7" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <ListView
+        android:id="@+id/lv_detail_destination"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:dividerHeight="0dp"
+        android:divider="@color/bggGray"
+        android:layout_above="@id/ll_footer_detail_plan"
+        android:layout_below="@id/ll_header_detail_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_footer_detail_plan"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_select_plan"
+            android:textColor="@color/white"
+            android:text="Pilih Plan"
+            android:background="@color/bgNav"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

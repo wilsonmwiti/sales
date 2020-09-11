@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.PackingSlip.PenerimaanPackingSlipActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/margin_from_top_header"
+                android:layout_marginBottom="@dimen/margin_from_top_text"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:background="@drawable/bg_white_with_radius"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingTop="@dimen/padding_from_header"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_under_big"
+                    android:text="Penerimaan Barang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/margin_from_top_text"
+                    android:id="@+id/tv_date"
+                    android:text="Wed, 25-01-18"
+                    android:textColor="@color/bgNav"
+                    android:textSize="@dimen/text_more_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginTop="@dimen/margin_from_top_text"
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_from_top_text"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="@dimen/text_normal"
+                        android:text="No. PB"
+                        android:textColor="@color/textPrimaryColor"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_no_pb"
+                        android:textColor="@color/textPrimaryColor"
+                        android:text=": PMPS/INV/01/2018/00001"
+                        android:textSize="@dimen/text_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/margin_from_top_text"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="@dimen/text_normal"
+                        android:text="No. Packing Slip"
+                        android:textColor="@color/textPrimaryColor"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_packing_slip_no"
+                        android:textColor="@color/textPrimaryColor"
+                        android:text=": PMPS/INV/01/2018/00001"
+                        android:textSize="@dimen/text_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pic"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginBottom="@dimen/margin_from_top_header"
+                android:background="@drawable/bg_white_with_radius"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingTop="@dimen/padding_from_small_border"
+                android:paddingBottom="@dimen/padding_from_small_border"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/margin_from_top_text"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_normal"
+                    android:text="Diterima oleh"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/text_normal"
+                    android:layout_marginTop="@dimen/margin_from_top_text"
+                    android:textColor="@color/textPrimaryColor"
+                    android:text=": Pilih PIC"
+                    android:id="@+id/tv_pic"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="end"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:layout_marginBottom="@dimen/margin_from_top_text"
+                android:background="@drawable/bg_graydark_with_radius"
+                android:textSize="@dimen/text_more_normal"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/padding_from_header"
+                android:paddingRight="@dimen/padding_from_header"
+                android:paddingTop="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:text="ITEM"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <id.co.beton.saleslogistic_trackingsystem.Customlayout.NonScrollListView
+                android:id="@+id/lv_item"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:layout_marginBottom="@dimen/margin_from_top_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </id.co.beton.saleslogistic_trackingsystem.Customlayout.NonScrollListView>
+            <Button
+                android:id="@+id/btn_konfirmasi"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:layout_marginBottom="@dimen/margin_from_top_text"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="@dimen/padding_from_header"
+                android:paddingRight="@dimen/padding_from_header"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_primary"
+                android:text="KONFIRMASI"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

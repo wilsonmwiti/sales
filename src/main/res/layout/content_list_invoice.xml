@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="@dimen/margin_from_top_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_marginBottom="@dimen/padding_from_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/padding_from_header"
+            android:paddingLeft="@dimen/padding_from_header"
+            android:paddingRight="@dimen/padding_from_header"
+            >
+
+            <TextView
+                android:id="@+id/tv_nama_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer 1"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <TextView
+                android:id="@+id/tv_no_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="( INV NO. )"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_total_harga_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rp.34.600.000,-"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_marginBottom="@dimen/padding_from_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bggGray"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_from_border"
+            android:paddingLeft="@dimen/padding_from_border"
+            android:paddingRight="@dimen/padding_from_border"
+            android:paddingBottom="@dimen/padding_from_border"
+            >
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="@dimen/width_text_view"
+                android:layout_height="wrap_content"
+                android:text="@string/due_date"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_normal" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_normal" />
+
+            <TextView
+                android:id="@+id/tv_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="( Due date )"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

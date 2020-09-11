@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.OrderAndPayment.Invoice.DetailInvoiceActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_marginTop="@dimen/margin_from_top_header"
+               android:layout_marginRight="@dimen/margin_from_top_header"
+               android:layout_marginLeft="@dimen/margin_from_top_header"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/bg_white_with_radius"
+               android:orientation="vertical"
+               android:paddingTop="@dimen/padding_from_border"
+               android:paddingBottom="@dimen/padding_from_border"
+               android:paddingLeft="@dimen/padding_from_header"
+               android:paddingRight="@dimen/padding_from_header"
+               >
+
+               <TextView
+                   android:id="@+id/tv_no_invoice"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="(invoice no.)"
+                   android:textColor="@color/textPrimaryColor"
+                   android:textSize="@dimen/text_big"
+                   android:layout_marginBottom="@dimen/margin_from_top_header"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/border_height"
+                   android:background="@color/colorAccent"
+                   android:layout_marginBottom="@dimen/margin_from_top_text"
+                   />
+
+               <TextView
+                   android:id="@+id/tv_total_harga_invoice"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="-"
+                   android:textColor="@color/colorPrimary"
+                   android:textSize="@dimen/text_more_normal" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:visibility="gone"
+               android:layout_marginTop="@dimen/margin_from_top_text"
+               android:layout_marginRight="@dimen/margin_from_top_header"
+               android:layout_marginLeft="@dimen/margin_from_top_header"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/bg_white_with_radius"
+               android:orientation="vertical"
+               android:paddingTop="@dimen/padding_from_border"
+               android:paddingBottom="@dimen/padding_from_border"
+               android:paddingLeft="@dimen/padding_from_header"
+               android:paddingRight="@dimen/padding_from_header"
+               >
+
+               <LinearLayout
+                   android:layout_marginTop="@dimen/margin_from_top_text"
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="@dimen/margin_from_top_text">
+                   <TextView
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/black"
+                       android:text="@string/payment_no"
+                       android:layout_width="@dimen/width_text_detail"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_marginLeft="50dp"
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/black"
+                       android:text=":"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:id="@+id/tv_no_of_payment"
+                       android:layout_marginLeft="5dp"
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/black"
+                       android:text="-"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+               <id.co.beton.saleslogistic_trackingsystem.Customlayout.NonScrollListView
+                   android:divider="@color/white"
+                   android:dividerHeight="0dp"
+                   android:id="@+id/lv_payment"
+                   android:layout_width="match_parent"
+                   android:layout_height="150dp">
+               </id.co.beton.saleslogistic_trackingsystem.Customlayout.NonScrollListView>
+           </LinearLayout>
+
+           <LinearLayout
+               android:visibility="gone"
+               android:layout_marginTop="@dimen/margin_from_top_text"
+               android:layout_marginRight="@dimen/margin_from_top_header"
+               android:layout_marginLeft="@dimen/margin_from_top_header"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/bg_white_with_radius"
+               android:orientation="vertical"
+               android:paddingTop="@dimen/padding_from_border"
+               android:paddingBottom="@dimen/padding_from_border"
+               android:paddingLeft="@dimen/padding_from_header"
+               android:paddingRight="@dimen/padding_from_header"
+               >
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/black"
+                       android:text="@string/total_payment"
+                       android:layout_width="@dimen/width_text_detail"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_marginLeft="50dp"
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/black"
+                       android:text=":"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:id="@+id/tv_total_payment"
+                       android:layout_marginLeft="5dp"
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/colorPrimary"
+                       android:text="-"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:visibility="gone"
+               android:layout_marginTop="@dimen/margin_from_top_text"
+               android:layout_marginRight="@dimen/margin_from_top_header"
+               android:layout_marginLeft="@dimen/margin_from_top_header"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/bg_red_with_radius"
+               android:orientation="vertical"
+               android:paddingTop="@dimen/padding_from_border"
+               android:paddingBottom="@dimen/padding_from_border"
+               android:paddingLeft="@dimen/padding_from_header"
+               android:paddingRight="@dimen/padding_from_header"
+               >
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <TextView
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/white"
+                       android:text="@string/invoice_balance"
+                       android:layout_width="@dimen/width_text_detail"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:layout_marginLeft="50dp"
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/white"
+                       android:text=":"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+                   <TextView
+                       android:id="@+id/tv_invoice_balance"
+                       android:layout_marginLeft="5dp"
+                       android:textSize="@dimen/text_normal"
+                       android:textColor="@color/white"
+                       android:text="-"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginTop="@dimen/margin_from_top_text"
+               android:layout_marginRight="@dimen/margin_from_top_header"
+               android:layout_marginLeft="@dimen/margin_from_top_header"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/bg_graydark_with_radius"
+               android:orientation="vertical"
+               android:paddingTop="@dimen/padding_from_border"
+               android:paddingBottom="@dimen/padding_from_border"
+               android:paddingLeft="@dimen/padding_from_header"
+               android:paddingRight="@dimen/padding_from_header"
+               >
+
+               <TextView
+                   android:textSize="@dimen/text_normal"
+                   android:textColor="@color/white"
+                   android:text="@string/orders"
+                   android:layout_width="@dimen/width_text_detail"
+                   android:layout_height="wrap_content" />
+
+           </LinearLayout>
+
+           <id.co.beton.saleslogistic_trackingsystem.Customlayout.NonScrollListView
+               android:layout_marginRight="@dimen/margin_from_top_header"
+               android:layout_marginLeft="@dimen/margin_from_top_header"
+               android:divider="@color/white"
+               android:dividerHeight="0dp"
+               android:id="@+id/lv_order"
+               android:layout_width="match_parent"
+               android:layout_height="150dp">
+           </id.co.beton.saleslogistic_trackingsystem.Customlayout.NonScrollListView>
+
+       </LinearLayout>
+   </ScrollView>
+
+</LinearLayout>

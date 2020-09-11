@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:background="@color/bgPerformance"
+    android:src="@drawable/bg_white_with_radius"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_with_radius"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_mycustomer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf = "@+id/rl_action_mycustomer"
+            android:foregroundGravity="fill_horizontal"
+            android:layout_centerInParent="true"
+            >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_primary_size"
+                android:textColor="@color/gray"
+                android:text="search more"
+                android:textStyle="italic"
+                android:layout_marginLeft="36dp"
+                android:foregroundGravity="fill_horizontal"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="fill_vertical"
+            android:layout_centerInParent="true"
+            >
+
+            <Button
+                android:id="@+id/btn_search_mycustomer"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="go"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_blue_with_radius"
+                android:padding="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                />
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/fab_del_mycustomer"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_delete"-->
+<!--                app:backgroundTint="@color/bgNav"-->
+<!--                app:fabSize="mini"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                />-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

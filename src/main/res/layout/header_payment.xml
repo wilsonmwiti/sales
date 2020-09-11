@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_from_border"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:paddingLeft="@dimen/padding_from_header"
+        android:layout_marginBottom="@dimen/padding_from_border"
+        android:paddingRight="@dimen/padding_from_header"
+        >
+
+        <TextView
+            android:id="@+id/tv_no_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/payment"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_big"
+            android:layout_marginBottom="@dimen/margin_from_top_header"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/border_height"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="@dimen/margin_from_top_text"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

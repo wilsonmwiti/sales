@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    android:orientation="vertical"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.OrderAndPayment.Payment.DetailPaymentActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/lv_detail_payment"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:divider="@color/white"
+        android:layout_above="@+id/ll_btn"
+        android:dividerHeight="0dp">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_print_receipt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/danger"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_normal"
+            android:text="@string/print_receipt"/>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_cancel_payment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_normal"
+            android:background="@color/grayDark"
+            android:textColor="@color/white"
+            android:text="@string/cancel_payment"/>
+    </LinearLayout>
+</RelativeLayout>

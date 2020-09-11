@@ -1,0 +1,469 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lr_nfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:onClick="toggle_contents"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_nfc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NFC"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <ImageView
+                        android:id="@+id/img_expanding_nfc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lr_reason_nfc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_nfc"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_reason_nfc"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reason"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <EditText
+                        android:id="@+id/et_content_reason_nfc"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/tv_reason_nfc"
+                        android:layout_height="200dp" />
+                    <Button
+                        android:id="@+id/btn_submit_nfc"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/et_content_reason_nfc"
+                        android:background="@drawable/bg_btn"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Report Lokasi -->
+            <LinearLayout
+                android:id="@+id/lr_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_reason_nfc"
+                android:clickable="true"
+                android:onClick="toggle_contents"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lokasi"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <ImageView
+                        android:id="@+id/img_expanding_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lr_reason_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_location"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_reason_location"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reason"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <EditText
+                        android:id="@+id/et_content_reason_location"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/tv_reason_location"
+                        android:layout_height="200dp" />
+                    <Button
+                        android:id="@+id/btn_submit_location"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/et_content_reason_location"
+                        android:background="@drawable/bg_btn"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- end of location -->
+
+            <!--toko tutup-->
+            <LinearLayout
+                android:id="@+id/lr_toko_tutup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_reason_location"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_toko_tutup"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Toko Tutup"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <ImageView
+                        android:id="@+id/img_expanding_toko_tutup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lr_reason_toko_tutup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_toko_tutup"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_reason_toko_tutup"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reason"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <EditText
+                        android:id="@+id/et_content_reason_toko_tutup"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/tv_reason_toko_tutup"
+                        android:layout_height="200dp" />
+                    <Button
+                        android:id="@+id/btn_submit_toko_tutup"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/et_content_reason_toko_tutup"
+                        android:background="@drawable/bg_btn"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+            <!--end toko tutup-->
+
+
+            <LinearLayout
+                android:id="@+id/lr_printer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_reason_toko_tutup"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_printer"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/printer"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <ImageView
+                        android:id="@+id/img_expanding_printer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lr_reason_printer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_printer"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_reason_printer"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reason"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <EditText
+                        android:id="@+id/et_content_reason_printer"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/tv_reason_printer"
+                        android:layout_height="200dp" />
+                    <Button
+                        android:id="@+id/btn_submit_printer"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/et_content_reason_printer"
+                        android:background="@drawable/bg_btn"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lr_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_reason_printer"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_other"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <ImageView
+                        android:id="@+id/img_expanding_other"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lr_reason_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lr_other"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/padding_from_header"
+                android:paddingLeft="@dimen/padding_from_border"
+                android:paddingRight="@dimen/padding_from_border"
+                android:paddingBottom="@dimen/padding_from_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_from_left_right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_reason_other"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reason"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_under_big" />
+
+                    <EditText
+                        android:id="@+id/et_content_reason_other"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_below="@+id/tv_reason_other"
+                        android:layout_height="200dp" />
+                    <Button
+                        android:id="@+id/btn_submit_other"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/et_content_reason_other"
+                        android:background="@drawable/bg_btn"
+                        android:layout_centerHorizontal="true"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

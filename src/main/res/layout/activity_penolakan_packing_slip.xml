@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.Route.Permission.AddPermissionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:paddingTop="@dimen/padding_from_header"
+        android:paddingBottom="@dimen/padding_from_header"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/text_big"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Alasan Penolakan"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pembatalan_order"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_pembatalan_order"
+            android:textSize="@dimen/text_more_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Pembatalan Order"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_change_route"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bukan_pesanan_toko"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_bukan_pesanan_toko"
+            android:textSize="@dimen/text_more_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Bukan Pesanan Toko"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_break_time"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_salah_alamat_pengiriman"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_salaha_alamat_pengiriman"
+            android:textSize="@dimen/text_more_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Salah Alamat Pengiriman"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_visit_time"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kirim_ketempat_lain"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_kirim_ketempat_lain"
+            android:textSize="@dimen/text_more_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Kirim ke Tempat Lain"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_kirim_ketempat_lain"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

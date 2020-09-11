@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_from_top_header"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_timer"
+            android:layout_width="125dp"
+            android:layout_height="125dp" />
+        <TextView
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:textSize="@dimen/text_very_big"
+            android:textColor="@color/black"
+            android:text="01:00:00"
+            android:id="@+id/tv_timer"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_take_break"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_nav"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Istirahat !"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

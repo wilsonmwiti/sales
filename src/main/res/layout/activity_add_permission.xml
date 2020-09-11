@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.Route.Permission.AddPermissionActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:padding="10dp"
+        android:id="@+id/ll_rencana_kunjungan"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/tv_change_route"
+            android:textSize="@dimen/text_primary_size"
+            android:textColor="@color/textPrimaryColor"
+            android:text="@string/title_visit_Plan"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_change_route"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:padding="10dp"
+        android:id="@+id/ll_istirahat"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_break_time"
+            android:textSize="@dimen/text_primary_size"
+            android:textColor="@color/textPrimaryColor"
+            android:text="@string/extend_break_time"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_break_time"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_waktu_kunjungan"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_visit_time"
+            android:textSize="@dimen/text_primary_size"
+            android:textColor="@color/textPrimaryColor"
+            android:text="@string/extend_visit_time"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_visit_time"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

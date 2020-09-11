@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.Inbox.DetailInboxActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/margin_from_top_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_from_header"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(title)"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginBottom="@dimen/margin_from_top_header"/>
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wed, 25-01-18"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_primary_size"
+            android:layout_marginBottom="@dimen/margin_from_top_header"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="@dimen/margin_from_top_header"
+            />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="(message)"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+</LinearLayout>

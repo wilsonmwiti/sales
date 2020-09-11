@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_from_header"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/tv_date_time"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_normal"
+            android:text="Teks dan Waktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bggGray"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_from_border"
+        android:paddingRight="@dimen/padding_from_border"
+        android:paddingTop="@dimen/padding_from_border"
+        android:paddingBottom="@dimen/padding_from_border"
+        >
+        <TextView
+            android:layout_marginLeft="@dimen/margin_from_left_right"
+            android:textStyle="bold"
+            android:text="@string/change_route"
+            android:id="@+id/tv_category_message"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/bgNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="@dimen/padding_from_border"
+        android:paddingLeft="@dimen/padding_from_border"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_user_code"
+            android:layout_marginLeft="@dimen/margin_from_left_right"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="@string/user_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:textColor="@color/textPrimaryColor"
+                android:text="@string/status"
+                android:textSize="@dimen/text_normal"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="@dimen/margin_from_left_right"
+
+                android:id="@+id/tv_status"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:textColor="@color/bgNav"
+                android:text="@string/waiting_for_approval"
+                android:textSize="@dimen/text_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:textColor="@color/textPrimaryColor"
+                android:text="@string/by"
+                android:textSize="@dimen/text_normal"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="@dimen/margin_from_left_right"
+
+                android:id="@+id/tv_approved_by"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:textColor="@color/bgNav"
+                android:text="Disetujui Oleh"
+                android:textSize="@dimen/text_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Date Time"
+                android:textSize="@dimen/text_normal"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:id="@+id/tv_date_time_2"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:textColor="@color/bgNav"
+                android:text="@string/waiting_for_approval"
+                android:textSize="@dimen/text_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_marginLeft="@dimen/margin_from_left_right"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="@string/reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginRight="@dimen/margin_from_left_right"
+            android:layout_marginLeft="@dimen/margin_from_left_right"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginRight="@dimen/margin_from_left_right"
+            android:id="@+id/tv_detail_reason"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_marginLeft="@dimen/margin_from_left_right"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="@string/reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

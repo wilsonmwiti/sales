@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/bggGray"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:padding="@dimen/padding_from_header"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="@string/item"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:text=": ( Item name )"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Qty Order"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_item_qty"
+                android:text=": ( qty + unit )"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text="Qty Diterima"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_item_qty_diterima"
+                android:text=": -"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.Route.DetailPlan.Invoice.DetailInvoicePaymentActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/lv_payment"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lr"
+        android:divider="@color/white"
+        android:dividerHeight="0dp">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/lr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_from_border"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/padding_from_border"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@color/white"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:text="OK"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

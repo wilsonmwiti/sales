@@ -1,0 +1,628 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="Activities Performance"
+                android:textSize="@dimen/text_under_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:id="@+id/tv_today"
+                android:textColor="@color/bgNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="Stop Point"
+                android:textSize="@dimen/text_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+                android:layout_margin="10sp"
+                style="@style/CustomProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:progress="40"
+                android:textAlignment="center"
+                android:id="@+id/progressBar"
+                android:progressTint="@color/colorPrimary"
+                android:background="@color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_delivery"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Visited Customer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_visited_customer"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_visited_customer"
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Place(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_visit_plan"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_new_stop_point"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Visit Plan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_new_places"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Place(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_unloading_time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Visit Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_visit_time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Minute(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_delivery_cancelled"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Unvisited"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_visist_canceled"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Place(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Alert"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_alert"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/colorAccent"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_permission"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Idle Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_idle_time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Hour(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Driving Time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_driving_time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Minute(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin_from_top_header"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Break Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_break_time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Minute(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_location_time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Report Location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_report_location"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_satuan_location_time"
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Time(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_stop_time"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Report NFC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_report_nfc"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_satuan_stop_time"
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Time(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

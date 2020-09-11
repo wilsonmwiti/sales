@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/padding_from_header"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="ID Plan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:id="@+id/tv_id_plan"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="xxx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/tv_date_plan"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="xxx"
+                android:textAlignment="textEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="Asset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+            <TextView
+                android:id="@+id/tv_asset"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="xxx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="Tanggal dibuat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+            <TextView
+                android:id="@+id/tv_created_date"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="xxx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="Total Kunjungan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+            <TextView
+                android:id="@+id/tv_total_visit"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="xxx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="Total Packing Slip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+            <TextView
+                android:id="@+id/tv_total_packingslip"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="xxx"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/delimiter_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_blue_with_radius"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_from_border"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:paddingLeft="@dimen/padding_from_header"
+        android:paddingRight="@dimen/padding_from_header"
+        android:visibility="gone">
+
+        <TextView
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/white"
+            android:text="New Visit"
+            android:layout_width="@dimen/width_text_detail"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

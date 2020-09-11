@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_from_top_header"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="@string/order_and_payment"
+                android:textSize="@dimen/text_under_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:textSize="@dimen/text_normal"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:text="Wed, 25-01-18"
+                android:textColor="@color/bgNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Plan Vs Actual"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="TIme Period : Today"/>
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pc_visitplan_actual"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/padding_from_header"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/stacked_chart"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/padding_from_header"
+                android:layout_height="500dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Plan Vs Actual"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="TIme Period : Today"/>
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pc_visitplan_actual2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"  />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/padding_from_header"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/stacked_chart2"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/padding_from_header"
+                android:layout_height="500dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Change Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_change_address"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Times(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Delivery Cancelled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_payment_canceled"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Times(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/padding_from_header"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="NFC Report"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_nfc_report"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Hours(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/margin_from_top_text"
+                android:orientation="vertical"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/header_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Printer Report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_from_border"
+                    android:background="@drawable/content_box_performance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_total_printer_report"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_very_very_big"
+                        android:textColor="@color/black"
+                        android:text="5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/text_more_normal"
+                        android:textColor="@color/black"
+                        android:text="Hours(s)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

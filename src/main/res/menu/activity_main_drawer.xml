@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_routes"
+            android:title="Routes" />
+        <item
+            android:id="@+id/nav_mycustomer"
+            android:title="My Customer"
+            />
+        <item android:id="@+id/nav_packing_slip"
+            android:title="Packing Slip"/>
+        <item
+            android:id="@+id/nav_order_and_payment"
+            android:title="Orders and Payments" />
+        <item
+            android:id="@+id/nav_inbox"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_performance"
+            android:title="Performance" />
+        <item
+            android:id="@+id/nav_customer"
+            android:title="Add Customer" />
+        <item
+            android:id="@+id/nav_start_nfc"
+            android:title="Start" />
+        <item
+            android:id="@+id/nav_checkin_nfc"
+            android:title="Check In"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_checkout_nfc"
+            android:title="Check Out"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_end_nfc"
+            android:title="End" />
+        <item
+            android:id="@+id/nav_signout"
+            android:title="Signout" />
+    </group>
+</menu>

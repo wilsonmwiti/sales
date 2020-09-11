@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:id="@+id/layout"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_marginBottom="@dimen/margin_from_top_text">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_marginBottom="@dimen/margin_from_top_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin_from_top_header"
+            android:paddingRight="@dimen/margin_from_top_header"
+            android:background="@drawable/bg_white_with_radius"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_nama_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer 1"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <TextView
+                android:id="@+id/tv_alamat_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="(Alamat Pelanggan)"
+                android:layout_marginBottom="@dimen/padding_from_border"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_normal" />
+            <View
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:background="@color/gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/tv_packing_slip_no"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/padding_from_border"
+                android:layout_height="wrap_content"
+                android:text="@string/packing_slip_no"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_payment_date"
+                    android:layout_width="@dimen/width_text_view"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Jumlah Item"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_more_normal" />
+                <TextView
+                    android:id="@+id/tv_jumlah_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rp.34.600.000,-"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl1"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="@dimen/width_text_view"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/status"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_normal" />
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="-"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bggGray"
+            android:layout_below="@+id/linear"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_from_border"
+            android:paddingRight="@dimen/padding_from_border"
+            android:paddingTop="@dimen/padding_from_border"
+            android:paddingBottom="@dimen/padding_from_border"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="@dimen/width_text_view"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sales_order_no"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_sales_order_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="( Due date )"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="@dimen/width_text_view"
+                    android:layout_height="wrap_content"
+                    android:text="@string/so_date"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_tanggal_so"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="( Due date )"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="@dimen/width_text_view"
+                    android:layout_height="wrap_content"
+                    android:text="Sales Rep. "
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_sales_rep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="( Due date )"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

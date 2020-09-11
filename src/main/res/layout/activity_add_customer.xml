@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/bggGray"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppBundle.Customer.AddCustomerActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_from_left_right"
+        android:background="@color/bggGray"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp">
+            <LinearLayout
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right"
+                android:layout_marginTop="@dimen/margin_from_top_header"
+                android:background="@drawable/bg_white_with_radius"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_from_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/header_form_customer"
+                    android:text="Konsumen Baru"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_marginTop="@dimen/margin_from_top_text"
+                    android:background="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_is_generate_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:visibility="visible"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generate code"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/rl_is_generate"
+                        android:gravity="center"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/rl_is_generate"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_checkbox"
+                        >
+                        <CheckBox
+                            android:text="generate"
+                            android:id="@+id/cb_is_generate"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/custom_checkbox"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:text="Kode"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/et_code"
+                    android:hint="Kode"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:textSize="@dimen/text_normal"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:text="Nama"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/et_name"
+                    android:hint="Nama"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:textSize="@dimen/text_normal"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:text="No.Telp"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="phone"
+                    android:id="@+id/et_phone"
+                    android:hint="No.Telp"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:textSize="@dimen/text_normal"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:text="Alamat"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/et_address"
+                    android:hint="Alamat"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:textSize="@dimen/text_normal"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:text="Lokasi"
+                    android:textSize="@dimen/text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:inputType="phone"
+                        android:id="@+id/et_latitude"
+                        android:hint="Latitude"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:textSize="@dimen/text_normal"
+                        android:background="@drawable/bg_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:layout_marginRight="5dp"/>
+
+                    <EditText
+                        android:inputType="phone"
+                        android:id="@+id/et_longitude"
+                        android:hint="Longitude"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:textSize="@dimen/text_normal"
+                        android:background="@drawable/bg_input"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:layout_marginRight="5dp"/>
+
+                    <Button
+                        android:id="@+id/btn_get_address"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:layout_gravity="left"
+                        android:textColor="@color/white"
+                        android:text="Peta"
+                        android:background="@drawable/bg_button_primary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_checkbox">
+
+                        <CheckBox
+                            android:text="is Branch"
+                            android:id="@+id/cb_is_branch"
+                            android:layout_width="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:button="@drawable/custom_checkbox"
+                            android:layout_height="wrap_content">
+                        </CheckBox>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cabang"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                </LinearLayout>
+
+                <EditText
+                    android:inputType="text"
+                    android:id="@+id/et_parent_code"
+                    android:hint="Parent Customer"
+                    android:layout_marginTop="@dimen/margin_from_top_header"
+                    android:textSize="@dimen/text_normal"
+                    android:background="@drawable/bg_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+
+                <!--Contact Customer-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:text="Kontak Konsumen"
+                        android:textColor="@color/textPrimaryColor"
+                        android:textSize="@dimen/text_big"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_marginTop="@dimen/margin_from_top_text"
+                        android:background="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <TextView
+                        android:textColor="@color/textPrimaryColor"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:text="Nama"
+                        android:textSize="@dimen/text_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/et_name_contact"
+                        android:hint="Nama"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:textSize="@dimen/text_normal"
+                        android:background="@drawable/bg_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/textPrimaryColor"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:text="Posisi Kerja"
+                        android:textSize="@dimen/text_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/et_job_contact"
+                        android:hint="Posisi Kerja"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:textSize="@dimen/text_normal"
+                        android:background="@drawable/bg_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/textPrimaryColor"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:text="No.Telp"
+                        android:textSize="@dimen/text_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:inputType="phone"
+                        android:id="@+id/et_phone_contact"
+                        android:hint="No.Telp"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:textSize="@dimen/text_normal"
+                        android:background="@drawable/bg_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/textPrimaryColor"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:text="Catatan"
+                        android:textSize="@dimen/text_normal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:inputType="text"
+                        android:id="@+id/et_note_contact"
+                        android:hint="Catatan"
+                        android:layout_marginTop="@dimen/margin_from_top_header"
+                        android:textSize="@dimen/text_normal"
+                        android:background="@drawable/bg_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_submit_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/bg_blue_with_radius"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

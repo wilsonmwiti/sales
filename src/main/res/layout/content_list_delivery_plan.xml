@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/padding_from_header"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_nama_customer"
+            android:textSize="@dimen/text_primary_size"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Customer 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_nama_jalan"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Jl. Soekarno Hatta No.. 409"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_jam"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_primary_size"
+            android:textColor="@color/colorPrimary"
+            android:text="10.12 - 11.45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="Packing Slip"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_packing_slip"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="No. Packing Slip"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_no_packing_slip"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

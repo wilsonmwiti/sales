@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="15dp"
+    android:background="@color/white"
+    >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_with_radius"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_mycustomer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf = "@+id/rl_action_mycustomer">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_mycustomer_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_primary_size"
+                        android:textColor="@color/textPrimaryColor"
+                        android:text="Customer 1"
+                        android:singleLine="false" />
+                    <TextView
+                        android:id="@+id/tv_mycustomer_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_nama_customer"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="@dimen/text_normal"
+                        android:textColor="@color/textPrimaryColor"
+                        android:text="Jl. Soekarno Hatta No.. 409"
+                        android:singleLine="false" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_action_mycustomer"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="fill_vertical"
+                android:layout_centerInParent="true"
+                >
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_edit_mycustomer"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_edit"
+                    app:backgroundTint="@color/bgNav"
+                    app:fabSize="mini"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toLeftOf="@id/fab_del_mycustomer"
+                    />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_del_mycustomer"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    app:backgroundTint="@color/bgNav"
+                    app:fabSize="mini"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/delimiter_mycustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_blue_with_radius"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_from_border"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:paddingLeft="@dimen/padding_from_header"
+        android:paddingRight="@dimen/padding_from_header"
+        android:visibility="gone">
+
+        <TextView
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/white"
+            android:text="New Visit"
+            android:layout_width="@dimen/width_text_detail"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

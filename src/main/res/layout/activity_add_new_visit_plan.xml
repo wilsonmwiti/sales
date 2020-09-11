@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bggGray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toolbar Title"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="right"
+                android:textSize="10dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:id="@+id/lv_detail_new_customer"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_add_customer_footer"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="60dp"
+        android:divider="@color/white"
+        android:dividerHeight="0dp">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_add_customer_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:paddingTop="@dimen/padding_from_border"
+        android:layout_marginBottom="@dimen/margin_from_top_header"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_add_customer_dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:padding="@dimen/padding_from_header"
+            android:background="@drawable/bg_white_with_radius"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_new_cust_address"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/text_normal"
+                    android:textColor="@color/textPrimaryColor"
+                    android:text="New visit destination :"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_new_visit_customer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nama Customer"
+                    android:singleLine="false"
+                    android:layout_marginEnd="15dp"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_marginTop="@dimen/padding_from_border"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_primary_size"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_add_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_blue_with_radius"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/ll_add_customer_footer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="@dimen/padding_from_border"-->
+        <!--android:paddingLeft="@dimen/padding_from_header"-->
+        <!--android:paddingTop="@dimen/padding_from_border"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:gravity="bottom"-->
+        <!--android:background="@color/bgNav"-->
+        <!--android:orientation="horizontal">-->
+        <!--<ImageView-->
+            <!--android:src="@drawable/ic_check_box_black_24dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_footer"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:text="Tambah Kunjungan Customer"-->
+            <!--android:textSize="@dimen/text_primary_size"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

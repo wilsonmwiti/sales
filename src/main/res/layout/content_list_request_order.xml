@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_marginBottom="@dimen/margin_from_top_text"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_with_radius"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_from_header"
+            android:paddingRight="@dimen/padding_from_header"
+            android:paddingTop="@dimen/padding_from_header"
+            android:paddingBottom="@dimen/padding_from_border"
+            >
+
+            <TextView
+                android:id="@+id/tv_nama_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer 1"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <TextView
+                android:id="@+id/tv_request_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="(Request. No. )"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bggGray"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_from_border"
+            android:paddingRight="@dimen/padding_from_border"
+            android:paddingTop="@dimen/padding_from_border"
+            android:paddingBottom="@dimen/padding_from_border"
+            >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="@dimen/width_text_view"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_date"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:id="@+id/tv_order_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="@dimen/width_text_view"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:textColor="@color/textPrimaryColor"
+                    android:textSize="@dimen/text_normal" />
+
+                <TextView
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

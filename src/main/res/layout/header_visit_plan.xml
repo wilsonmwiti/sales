@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:padding="@dimen/padding_from_header"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_rencana_kunjungan"
+                android:textSize="@dimen/text_size_header"
+                android:text="Rute"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_date_vp"
+                android:gravity="end"
+                android:textSize="@dimen/text_under_big"
+                android:text="Wed, 25-01-18"
+                android:textColor="@color/bgNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_total_kunjungan"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/total_visit_place"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_visit_place"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_jumlah_invoice"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/number_of_invoice"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_total_number_invoice"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/starting_point"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_starting_point"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/departure_at"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_depature"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/finish_estimation"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="50dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_estimation"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

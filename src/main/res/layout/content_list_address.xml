@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_white_with_radius"
+        android:padding="@dimen/padding_from_border"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:textSize="@dimen/text_under_big"
+            android:textColor="@color/textPrimaryColor"
+            android:id="@+id/tv_branch"
+            android:text="@string/branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/margin_from_left_right"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginTop="@dimen/margin_from_left_right"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:id="@+id/tv_address"
+            android:text="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

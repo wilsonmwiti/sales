@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/bggGray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.AppBundle.PackingSlip.PembatalanOrderActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:paddingRight="@dimen/padding_from_border"
+        android:paddingLeft="@dimen/padding_from_header"
+        android:paddingTop="@dimen/padding_from_border"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:layout_marginBottom="@dimen/margin_from_top_header"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:textSize="@dimen/text_under_big"
+            android:textColor="@color/black"
+            android:text="Penolakan Packing Slip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_date_penolakan"
+            android:layout_marginTop="@dimen/margin_from_left_right"
+            android:text="Wed, 25-01-18"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/bgNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="No. Packing Slip"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_packing_slip_no"
+                android:text="No. Packing Slip"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_left_right"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Alasan"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_alasan"
+                android:text="-"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:text="Keterangan Penolakan"
+            android:textSize="@dimen/text_normal"
+            android:textColor="@color/textPrimaryColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_keterangan_penolakan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_normal"
+            android:layout_marginTop="@dimen/margin_from_left_right"
+            android:background="@drawable/bg_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="OK"
+            android:layout_marginTop="150dp"
+            android:background="@drawable/bg_button_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

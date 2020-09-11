@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bggGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+<!--        <EditText-->
+<!--            android:id="@+id/et_search_customer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="@dimen/text_primary_size"-->
+<!--            android:hint="Search Customer"-->
+<!--            android:drawableLeft="@drawable/search_icon"-->
+<!--            android:drawablePadding="5dp"-->
+<!--            android:drawableStart="@drawable/search_icon"/>-->
+
+        <SearchView
+            android:id="@+id/search_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_primary_size"
+            android:hint="Search Customer"
+            android:drawableLeft="@drawable/search_icon"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/search_icon"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_detail_customer_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_add_customer_footer"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="40dp"
+        android:divider="@color/white"
+        android:dividerHeight="0dp">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_add_customer_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_from_border"
+        android:paddingLeft="@dimen/padding_from_header"
+        android:paddingTop="@dimen/padding_from_border"
+        android:layout_marginBottom="@dimen/margin_from_top_header"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_add_customer_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_blue_with_radius"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+</RelativeLayout>

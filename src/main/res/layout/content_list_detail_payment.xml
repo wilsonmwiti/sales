@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/padding_from_border"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_payment_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="( Inv No. )"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_marginLeft="@dimen/padding_from_border"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_under_big" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/padding_from_border"
+            android:paddingLeft="@dimen/padding_from_border"
+            android:paddingBottom="@dimen/padding_from_border"
+            android:paddingTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_payment_date"
+                android:layout_width="@dimen/width_text_view"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/total_invoice"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_normal" />
+            <TextView
+                android:id="@+id/tv_total_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rp.34.600.000,-"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@color/bggGray"
+            android:paddingLeft="@dimen/padding_from_border"
+            android:paddingBottom="@dimen/padding_from_border"
+            android:paddingTop="@dimen/padding_from_border"
+            android:layout_marginBottom="@dimen/margin_from_top_header"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="@dimen/width_text_view"
+                android:layout_height="wrap_content"
+                android:text="@string/total_payment"
+                android:layout_marginLeft="@dimen/padding_from_border"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_normal" />
+            <TextView
+                android:id="@+id/tv_total_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Rp.25.000.000,-"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_normal" />
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv_payment_meethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

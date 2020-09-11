@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bggGray"
+    android:orientation="vertical"
+    tools:context="id.co.beton.saleslogistic_trackingsystem.ProfileActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:background="@drawable/bg_profile"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_profile_picture"
+            android:layout_width="@dimen/width_pict_profile"
+            android:layout_height="@dimen/height_pict_profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/icon_user" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/user_code"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <TextView
+                android:id="@+id/tv_user_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text=": Sales01"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="User name"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text=": Rizki"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="@string/branch"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <TextView
+                android:id="@+id/tv_branch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text=": Soeta"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:text="Divisi"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+
+            <TextView
+                android:id="@+id/tv_division"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text=": Divisi 1"
+                android:textColor="@color/textPrimaryColor"
+                android:textSize="@dimen/text_primary_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:padding="10dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_change_password"
+            android:textSize="@dimen/text_primary_size"
+            android:textColor="@color/textPrimaryColor"
+            android:text="Ubah Password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/btn_arrow_right"
+            android:layout_gravity="end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>-->
+
+</LinearLayout>

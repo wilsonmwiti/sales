@@ -1,0 +1,168 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        jcenter()
+        mavenCentral()
+        google()
+    }
+
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.2' // google-services plugin
+    }
+}
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        sign_clientRelease {
+            storeFile file('/home/iswan/kerjaanC/app_trackings/android/keystore/cis-tracking/CisTracking.jks')
+            storePassword 'c154n6k4n'
+            keyAlias = 'cisTracking'
+            keyPassword 'c154n6k4n'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        flavorDimensions "tier"
+        applicationId "id.co.beton.saleslogistic_trackingsystem"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.33.5S"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // Enabling multidex support.
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", '"http://tracking.cisangkan.co.id:7091/"'
+
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        ignoreWarnings true //false
+    }
+
+    configurations {
+        all {
+            exclude module: 'httpclient'
+            exclude module: 'json'
+            exclude group: 'org.apache.httpcomponents'
+        }
+    }
+
+    productFlavors {
+        local {
+            buildConfigField "String", "BASE_URL", '"http://192.168.43.178:7091/"'
+            resValue "string", "app_name", "tracking - local"
+        }
+        development {
+            buildConfigField "String", "BASE_URL", '"http://192.168.43.178:7091/"'
+            resValue "string", "app_name", "Cisangkan - development"
+        }
+        client {
+            buildConfigField "String", "BASE_URL", '"http://tracking.cisangkan.co.id:7091/"'
+            resValue "string", "app_name", "Sales Tracking PT.Cisangkan"
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            def newName = "Cis-Trackgo_V" + defaultConfig.versionName  + ".apk"
+
+            if (variant.productFlavors[0].name == "client") {
+                newName = "Cis-Trackgo-Sales_V" + defaultConfig.versionName  + ".apk"
+            }
+            if (variant.productFlavors[0].name == "local") {
+                newName = "Sales Track Local" + defaultConfig.versionName + ".apk"
+            }
+            outputFileName = newName
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+
+        maven { url "https://jitpack.io" }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        mavenCentral()
+        google()
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-base:15.0.1'
+//    implementation 'com.google.android.gms:play-services-base:17.0.0'
+
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+//    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    implementation 'com.google.firebase:firebase-core:15.0.2'
+//    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+    implementation 'com.google.firebase:firebase-messaging:15.0.2'
+//    implementation 'com.google.firebase:firebase-messaging:16.0.1'
+
+    implementation 'com.google.android.gms:play-services-places:15.0.1'
+//    implementation 'com.google.android.gms:play-services-places:17.0.0'
+
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+//    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    implementation 'androidx.multidex:multidex:2.0.0'
+//    implementation 'com.google.android.libraries.places:places:1.0.0'
+//    implementation 'com.google.android.libraries.places:places-compat:2.1.0'
+//    implementation 'com.google.android.libraries.places:places:1.1.0'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.akexorcist:googledirectionlibrary:1.1.1'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+    implementation 'com.google.guava:guava:25.1-android'
+    implementation 'com.github.nkzawa:socket.io-client:0.5.2'
+    implementation 'com.readystatesoftware.chuck:library:1.1.0'
+
+//    code for autocomplete place
+    implementation'com.seatgeek:placesautocomplete:0.3-SNAPSHOT'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

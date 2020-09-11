@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_from_top_header"
+        android:layout_marginTop="@dimen/margin_from_top_header"
+        android:layout_marginLeft="@dimen/margin_from_left_right"
+        android:layout_marginRight="@dimen/margin_from_left_right"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:text="@string/activities_performance"
+                android:textSize="@dimen/text_under_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/tv_date"
+                android:textSize="@dimen/text_normal"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:text="Wed, 25-01-18"
+                android:textColor="@color/bgNav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:layout_marginRight="@dimen/margin_from_left_right">
+                <TextView
+                    android:textSize="@dimen/text_normal"
+                    android:textColor="@color/black"
+                    android:text="@string/branch"
+                    android:layout_width="@dimen/width_text_detail"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="50dp"
+                    android:textSize="@dimen/text_normal"
+                    android:textColor="@color/black"
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_branch"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="@dimen/text_normal"
+                    android:textColor="@color/black"
+                    android:text="@string/all_branch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Plan and Actual"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="TIme Period : Today"/>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pc_visitplan_actual"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/padding_from_header"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/stacked_chart"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Visit Plan and Actual"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="TIme Period : Today"/>
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pc_visitplan_actual2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"  />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_from_left_right"
+            android:layout_marginRight="@dimen/margin_from_left_right"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:background="@drawable/bg_grey_with_radius"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_from_border">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_from_left_right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Places Follow Up by Sales Rep."
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/padding_from_header"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/stacked_chart2"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:background="@drawable/bg_white_with_radius"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bggGray"
+                android:padding="@dimen/padding_from_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACTIVITIES" />
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pc_visitplan_actual3"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/padding_from_border"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="@dimen/padding_from_border"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white_with_radius"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/padding_from_header"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:layout_height="wrap_content">
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/stacked_chart3"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:background="@drawable/bg_white_with_radius"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bggGray"
+                android:padding="@dimen/padding_from_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALERTS" />
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/stacked_chart4"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_from_border"
+            android:background="@drawable/bg_white_with_radius"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bggGray"
+                android:padding="@dimen/padding_from_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PERMISSION" />
+
+            </LinearLayout>
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/stacked_chart5"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@android:color/white" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

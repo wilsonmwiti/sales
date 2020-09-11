@@ -1,0 +1,214 @@
+<resources>
+<!--    <string name="app_name">Xenos Tracking System</string>-->
+    <string name="onlyAlphabet">abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ </string>
+    <string name="onlyNumeric">0123456789</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_change_pssword">ChangePsswordActivity</string>
+
+    <string name="title_permssion">Permission &amp; Alert </string>
+    <string name="title_activity_add_permission">AddPermissionActivity</string>
+    <string name="title_activity_extend_time">ExtendTimeActivity</string>
+    <string name="title_activity_detail_packing_slip">DetailPackingSlipActivity</string>
+    <string name="title_activity_penolakan_packing_slip">PenolakanPackingSlipActivity</string>
+    <string name="title_activity_penerimaan_packing_slip">PenerimaanPackingSlip</string>
+    <string name="title_activity_pic">PICActivity</string>
+    <string name="title_activity_add_pic">AddPICActivity</string>
+    <string name="title_activity_pembatalan_order">PembatalanOrderActivity</string>
+    <string name="title_activity_salah_alamat">SalahAlamatActivity</string>
+    <string name="title_activity_addresses">AddressesActivity</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="number_of_invoice">Jumlah Invoice</string>
+    <string name="title_visit_Plan">Perubahan Rute</string>
+    <string name="total_visit_place">Total Kunjungan</string>
+    <string name="total_invoice">Total Invoice</string>
+    <string name="starting_point">Titik Awal</string>
+    <string name="departure_at">Keberangkatan</string>
+    <string name="arrived_at">Kedatangan</string>
+    <string name="finish_estimation">Perkiraan Selesai</string>
+    <string name="received_invoice_confirmation">Konfirmasi Invoice Diterima</string>
+    <string name="no_of_invoice">No. Invoice</string>
+    <string name="departure">Keberangkatan</string>
+    <string name="you_will_be_back_to_end_point_at">Anda akan kembali ke titik akhir di</string>
+    <string name="contact">KONTAK</string>
+    <string name="pic">PIC</string>
+    <string name="ph">ph</string>
+    <string name="position">Posisi</string>
+    <string name="other_information">INFORMASI LAINNYA</string>
+    <string name="invoice">Invoice </string>
+    <string name="last_visited">Kunjungan Terakhir</string>
+    <string name="last_ordered">Pesanan Terakhir</string>
+    <string name="notes">Catatan</string>
+    <string name="invoices">Invoice(s)</string>
+    <string name="select_all">Pilih Semua</string>
+    <string name="due_date">Batas tanggal terakhir</string>
+    <string name="sales_order_no">No Pesanan Penjualan</string>
+    <string name="packing_slip_date">Tanggal Slip Kemasan</string>
+    <string name="packing_slip_no">No Slip Kemasan</string>
+    <string name="payment">Payment</string>
+    <string name="payment_no">No Pembayaran</string>
+    <string name="payment_canceled">Payment Cancelled</string>
+    <string name="total_payment">Total Pembayaran</string>
+    <string name="detail_payment">Detail Pembayaran</string>
+    <string name="payment_method">Metode pembayaran</string>
+    <string name="confirm_payment">Konfirmasi Pembayaran</string>
+    <string name="cash">Tunai</string>
+    <string name="giro">Giro</string>
+    <string name="account_name">Nama Akun</string>
+    <string name="account_no">No Rekening</string>
+    <string name="giro_no">No Ac Giro</string>
+    <string name="giro_to">Penerima Giro</string>
+    <string name="cheque_no">Cheque No</string>
+    <string name="bank">Bank</string>
+    <string name="bank_name">Nama Bank</string>
+    <string name="cheque">Cheque</string>
+    <string name="transfer_to_account">Transfer ke Akun</string>
+    <string name="bank_account">Bank Akun</string>
+    <string name="eror">ERROR</string>
+    <string name="allert_eror">Pastikan printer menyala, dan sudah di setting dengan benar.</string>
+    <string name="try_again">Coba Lagi</string>
+    <string name="orders">Pesanan</string>
+    <string name="order_and_payment">Pesanan &amp; Pembayaran</string>
+    <string name="number_of_order">Jumlah Pesanan</string>
+    <string name="total_sales_order">Total Pesanan Penjualan</string>
+    <string name="order_date">Tanggal Pesanan</string>
+    <string name="status">Status</string>
+    <string name="ro_no">No RO</string>
+    <string name="status_order">Status Pesanan</string>
+    <string name="special_order">Pesanan Spesial</string>
+    <string name="order_by">Dipesan oleh</string>
+    <string name="delivery_addres">Alamat pengiriman</string>
+    <string name="products">Barang</string>
+    <string name="item">Barang</string>
+    <string name="qty">qty</string>
+    <string name="so_date">Tanggal SO</string>
+    <string name="so_no">No SO</string>
+    <string name="total">Total</string>
+    <string name="product_name">Nama Produk</string>
+    <string name="add">Tambah PRODUK</string>
+    <string name="receipt_no">No Tanda Terima</string>
+    <string name="processed_by">Diproses Oleh</string>
+    <string name="invoice_balance">Saldo Invoice</string>
+    <string name="print_receipt">Cetak Tanda Terima</string>
+    <string name="cancel_payment">Batalkan Pembayaran</string>
+    <string name="nfc">NFC</string>
+    <string name="printer">Cetak</string>
+    <string name="other">Lainnya</string>
+    <string name="reason">Alasan</string>
+    <string name="change_route">Ubah Rute</string>
+    <string name="extend_break_time">Perpanjangan Waktu Istirahat</string>
+    <string name="extend_visit_time">Perpanjangan Waktu Kunjungan</string>
+    <string name="Extend">Memperpanjang</string>
+    <string name="price_item">Harga / Barang</string>
+    <string name="total_purchase">Total Pembelian</string>
+    <string name="activities_performance">Kinerja Kegiatan</string>
+    <string name="stop_point">Titik Berhenti</string>
+    <string name="visited_customer">Mengunjungi Pelanggan</string>
+    <string name="place">Tempat(s)</string>
+    <string name="new_place">Tempat Baru</string>
+    <string name="visit_time">Waktu Mengunjungi</string>
+    <string name="visit_cancelled">Kunjungan Dibatalkan</string>
+    <string name="alert">Notifikasi</string>
+    <string name="permission">Izin</string>
+    <string name="iddle_time">Waktu kosong</string>
+    <string name="driving_time">Waktu Mengemudi</string>
+    <string name="break_time">waktu istirahat</string>
+    <string name="stop_time">Hentikan waktu</string>
+    <string name="hour">Hour(s)</string>
+    <string name="invoicing">Invoicing</string>
+    <string name="request_orders">Request Order(s)</string>
+    <string name="RO_special">RO Special</string>
+    <string name="RO_cancelled">RO Cancelled</string>
+    <string name="SO_cancelled">SO Cancelled</string>
+    <string name="sales_order">Sales Order</string>
+    <string name="delivered">Delivered</string>
+    <string name="reprint_receipt">Reprint Receipt</string>
+    <string name="time">Time(s)</string>
+    <string name="nfc_report">NFC Report</string>
+    <string name="printer_report">Printer Report</string>
+    <string name="date_and_time">Waktu dan Tanggal</string>
+    <string name="user_code">Kode User</string>
+    <string name="request_in_a_month">Permintaan dalam sebulan</string>
+    <string name="approve">Menyetujui</string>
+    <string name="reject">Menolak</string>
+    <string name="new_password">Password Baru</string>
+    <string name="confirm_new_password">Konfirmasi Password</string>
+    <string name="branch">Cabang</string>
+    <string name="all_branch">Semua Cabang</string>
+    <string name="waiting_for_approval">Menunggu Untuk Disetujui</string>
+    <string name="by">Oleh</string>
+    <string name="current_location">Lokasi Terkini</string>
+    <string name="visit_slash_plan">Dikunjungi / Rencana</string>
+    <string name="received_confirmation">Menerima Konfirmasi</string>
+    <string name="order_performance">Order Performance</string>
+    <string name="sales_order_date">Tanggal Pemesanan Pembelian</string>
+    <string name="packing_slip">Packing Slip(s)</string>
+    <string name="new_request">Permintaan Baru</string>
+    <string name="title_activity_add_address">Map</string>
+    <string name="title_activity_packing_slip">PackingSlipActivity</string>
+    <string name="delivery">Delivery</string>
+    <string name="new_stop_point">New Stop Point</string>
+    <string name="unloading_time">Unloading Time</string>
+    <string name="delivery_cancelled">Delivery Cancelled</string>
+    <string name="terkirim">Terkirim</string>
+    <string name="dibatalkan">Dibatalkan</string>
+    <string name="salah_alamat">Salah Alamat</string>
+    <string name="pindah_alamat">Pindah Alamat</string>
+    <string name="delivery_performance">Delivery Performance</string>
+    <string name="total_items">Total Items</string>
+    <string name="total_delivered">Total Delivered</string>
+
+    <string name="title_activity_state">StateActivity</string>
+    <string name="text_start_activity">Pengecekan status sebagai tanda aktivitas dimulai</string>
+
+    <string name="title_activity_add_visit_plan">Add Visit Plan</string>
+
+    <string name="title_activity_add_customer">Add Customer</string>
+    <string name="title_activity_edit_customer">Edit Customer</string>
+    <string name="title_activity_my_customer">Edit Customer</string>
+
+    <string name="title_activity_add_parent_customer">Add Parent Customer</string>
+
+    <string name="title_activity_detail_plan">Select Delivery Plan</string>
+
+    <string name="title_mycustomer">My Customer </string>
+    <string name="last_added_mycustomer">Last added customer</string>
+    <string name="title_activity_place_autocomplete">Add place</string>
+<!--   api key leibel -->
+    <!--    <string name="google_maps_key">AIzaSyAEkUYTl18iko3Q0EgAKCthMLY-637KYXI</string>-->
+<!--    api key xenos -->
+    <string name="GOOGLE_MAP_API_KEY_ANDROID">AIzaSyCyCQF0pCkYlvjmjmR-_SksZ2bGW2o7_XU</string>
+    <string name="google_maps_key">AIzaSyCyCQF0pCkYlvjmjmR-_SksZ2bGW2o7_XU</string>
+    <!-- fragment TAG -->
+    <string name="fragment_mycustomer">My Customer</string>
+    <!-- spinner kategori customer   -->
+    <string-array name="category_customer">
+        <item></item>
+        <item>Developer</item>
+        <item>End user</item>
+        <item>Government</item>
+        <item>Konsultan</item>
+        <item>Pemborong/kontraktor</item>
+        <item>Penyalur/distributor</item>
+    </string-array>
+    <string-array name="category_visit">
+    <!-- spinner kategori visit -->
+        <item></item>
+        <item>Cari info</item>
+        <item>Telp proyek</item>
+        <item>Prospecting</item>
+        <item>Presentasi</item>
+        <item>Menawarkan</item>
+        <item>Follow up</item>
+        <item>Negosiasi</item>
+        <item>Confirm order</item>
+        <item>Closing order</item>
+    </string-array>
+</resources>

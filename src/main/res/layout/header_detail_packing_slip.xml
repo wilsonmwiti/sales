@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bggGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_white_with_radius"
+        android:padding="@dimen/padding_from_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textSize="@dimen/text_big"
+                android:textColor="@color/black"
+                android:text="@string/packing_slip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_date"
+                android:textSize="@dimen/text_more_normal"
+                android:textColor="@color/bgNav"
+                android:text="Wed, 25-01-18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/packing_slip_no"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_packing_slip_no"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text=": PMPS/INV/01/2018/00001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/sales_order_no"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_sales_order_no"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text=": PMPS/INV/01/2018/00001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_from_top_text"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/black"
+                android:text="@string/so_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_sales_order_date"
+                android:textSize="@dimen/text_normal"
+                android:textColor="@color/textPrimaryColor"
+                android:text=": 2018-02-02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_alamat"
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/bg_white_with_radius"
+            android:padding="@dimen/padding_from_header"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/text_normal"
+                    android:text="@string/status"
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:textSize="@dimen/text_normal"
+                    android:text="-"
+                    android:textColor="@color/colorAccent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_from_left_right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/text_normal"
+                    android:text="@string/by"
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_nama_pic"
+                    android:textSize="@dimen/text_normal"
+                    android:text=": Nama PIC"
+                    android:textColor="@color/textPrimaryColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin_from_left_right"
+                android:textSize="@dimen/text_normal"
+                android:text="Alamat Pengiriman Baru"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_alamat_pengiriman_baru"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:textSize="@dimen/text_normal"
+                android:text="-"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/margin_from_left_right"
+                android:textSize="@dimen/text_normal"
+                android:text="Alasan"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_alasan"
+                android:layout_marginTop="@dimen/margin_from_top_text"
+                android:textSize="@dimen/text_normal"
+                android:text="-"
+                android:textColor="@color/textPrimaryColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_edit_alama_pengirman"
+            android:textSize="@dimen/text_normal"
+            android:background="@drawable/bg_nav"
+            android:textColor="@color/white"
+            android:text="Edit Alamat Pengiriman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_white_with_radius"
+        android:padding="@dimen/padding_from_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/text_normal"
+            android:text="Sales Rep."
+            android:textColor="@color/textPrimaryColor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_sales_rep"
+            android:textSize="@dimen/text_normal"
+            android:text=": Sales Rep."
+            android:textColor="@color/textPrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_white_with_radius"
+        android:padding="@dimen/padding_from_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/text_normal"
+            android:text="@string/order_by"
+            android:textColor="@color/textPrimaryColor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_order_by"
+            android:textSize="@dimen/text_normal"
+            android:text=": PIC"
+            android:textColor="@color/textPrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_white_with_radius"
+        android:padding="@dimen/padding_from_header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="@dimen/text_normal"
+            android:text="@string/delivery_addres"
+            android:textColor="@color/textPrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/margin_from_top_header"
+            android:id="@+id/tv_address"
+            android:textSize="@dimen/text_normal"
+            android:text="Delivery Address"
+            android:textColor="@color/textPrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/margin_from_top_text"
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:background="@drawable/bg_graydark_with_radius"
+        android:textSize="@dimen/text_more_normal"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/padding_from_header"
+        android:paddingRight="@dimen/padding_from_header"
+        android:paddingTop="@dimen/padding_from_border"
+        android:paddingBottom="@dimen/padding_from_header"
+        android:text="BARANG"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

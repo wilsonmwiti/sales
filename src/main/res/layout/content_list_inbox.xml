@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="@dimen/margin_from_top_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/bggGray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/margin_from_top_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_white_with_radius"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_from_header"
+        >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="date"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_normal" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Title"
+            android:textColor="@color/textPrimaryColor"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bggGray"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_from_border"
+        android:paddingRight="@dimen/padding_from_border"
+        android:paddingTop="@dimen/padding_from_border"
+        android:paddingBottom="@dimen/padding_from_border"
+        >
+        <TextView
+            android:id="@+id/tv_category_message"
+            android:layout_marginLeft="10dp"
+            android:layout_width="@dimen/width_text_view"
+            android:layout_height="wrap_content"
+            android:text="Category Message"
+            android:textColor="@color/bgNav"
+            android:textSize="@dimen/text_normal" />
+
+    </LinearLayout>
+</RelativeLayout>
