@@ -1,0 +1,11 @@
+/build
+/client
+
+/androidTest
+/debug
+/Google
+/release
+/test
+
+app.iml
+google-services.json
