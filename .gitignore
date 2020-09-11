@@ -2,6 +2,12 @@
 /client
 /development
 /local
+/src/Google
+/src/androidTest
+/src/debug
+/src/release
+/src/test
+
 
 /androidTest
 /debug
