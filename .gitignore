@@ -1,5 +1,7 @@
 /build
 /client
+/development
+/local
 
 /androidTest
 /debug
